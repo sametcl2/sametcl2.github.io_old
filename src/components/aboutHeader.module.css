@@ -1,0 +1,14 @@
+.Container {
+    display: "flex";
+    flex-direction: "column";
+    justify-content: "center"; 
+    align-items: "center";
+}
+
+.Container > h1,h2,h3 {
+    color: var(--toolbar-color)
+}
+
+.Container > p {
+    color: var(--font-color)
+}

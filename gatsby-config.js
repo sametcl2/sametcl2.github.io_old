@@ -1,18 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "My Blog",
+    siteUrl: "https://www.sametcl2.github.io",
+    title: "Samet Şahin Personal Page",
   },
   plugins: [
     "gatsby-transformer-remark",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "blog",
-        path: `${__dirname}/blog`,
-      },
-    },
+    "gatsby-plugin-mdx",
   ],
 };
