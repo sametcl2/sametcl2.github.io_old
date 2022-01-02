@@ -14,8 +14,11 @@
     margin-right: 10px;
 }
 
-.SVGIcon {
-    /* margin-right: 15px; */
-    width: 45px;
-    height: 45px;
+.HeaderContainer a {
+    cursor: pointer;
+}
+
+.HeaderContainer a:hover {
+    filter: none;
+    background: transparent;
 }

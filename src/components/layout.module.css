@@ -37,19 +37,80 @@
 
 body {
   background-color: var(--background-color);
+  font-size: 1rem;
+  line-height: 1.6; 
+  text-align:justify;
+}
+
+p,
+ol,
+ul,
+table,
+blockquote {
+  font-size: 1.18rem;
+  margin: 0 0 2rem;
+}
+
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: bold;
+  padding: 0.1rem 0.2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: brightness(1.1);
+  background: var(--yellow);
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+ul li p {
+  margin: 0;
+}
+
+ul li ul {
+  margin: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--heading-font-family);
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  color: var(--heading-font-color);
+  scroll-margin-top: 60px;
 }
 
 .container {
   margin: auto;
-  max-width: 600px;
+  max-width: 700px;
   font-family: sans-serif;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+  max-width: 900px;
 }
 
 .heading {
@@ -61,8 +122,4 @@ body {
   color: var(--yellow);
   font-weight: 700;
   margin: 3rem 0;
-}
-
-.writings {
-  color: var(--font-color);
 }

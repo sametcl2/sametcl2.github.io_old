@@ -1,20 +1,14 @@
 import * as React from "react";
 import Social from "./social";
-import {
-  container,
-  heading,
-  siteTitle,
-} from "./layout.module.css";
+import { container, siteTitle } from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <div className={container}>
       <header className={siteTitle}>
-        <Social/>
+        <Social />
       </header>
-      <main>    
-        {children}
-      </main>
+      <main>{children}</main>
     </div>
   );
 };

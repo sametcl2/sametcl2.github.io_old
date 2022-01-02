@@ -1,11 +1,38 @@
-import React from 'react'
-import { Container } from './aboutHeader.module.css'
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import * as DesignSystem from "./aboutHeader.module.css";
 
-export default function AboutHeader() {
-    return (
-        <div className={Container}>
-            <h1>Ben Samet Şahin</h1>
-            <p>Frontend developer olarak Likom Yazılım'da çalışıyorum. Amatör olarak electrogitar çalışyorum.</p>
-        </div>
-    )
-}
+const AboutHeader = () => {
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          allMdx {
+            nodes {
+              id
+              body
+            }
+          }
+        }
+      `}
+      render={(data) => (
+        <MDXRenderer
+          id={data.allMdx.nodes[0].id}
+          components={{
+            h1: DesignSystem,
+            h2: DesignSystem,
+            h3: DesignSystem,
+            p: DesignSystem,
+            ul: DesignSystem,
+            li: DesignSystem,
+          }}
+        >
+          {data.allMdx.nodes[0].body}
+        </MDXRenderer>
+      )}
+    />
+  );
+};
+
+export default AboutHeader;
