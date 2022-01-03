@@ -1,6 +1,6 @@
 import * as React from "react";
 import Social from "./social";
-import { container, siteTitle } from "./layout.module.css";
+import { container, siteTitle, BottomLine } from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (

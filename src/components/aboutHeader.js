@@ -17,17 +17,7 @@ const AboutHeader = () => {
         }
       `}
       render={(data) => (
-        <MDXRenderer
-          id={data.allMdx.nodes[0].id}
-          components={{
-            h1: DesignSystem,
-            h2: DesignSystem,
-            h3: DesignSystem,
-            p: DesignSystem,
-            ul: DesignSystem,
-            li: DesignSystem,
-          }}
-        >
+        <MDXRenderer id={data.allMdx.nodes[0].id}>
           {data.allMdx.nodes[0].body}
         </MDXRenderer>
       )}

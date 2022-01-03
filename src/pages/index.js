@@ -1,11 +1,11 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import AboutHeader from "../components/aboutHeader";
+import About from "../components/aboutHeader";
 
 const AboutPage = ({ data }) => {
   return (
     <Layout>
-      <AboutHeader />
+      <About />
     </Layout>
   );
 };
