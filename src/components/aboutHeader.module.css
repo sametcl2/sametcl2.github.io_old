@@ -14,21 +14,21 @@ h2 {
 
 h3 {
   color: var(--yellow);
-  font-size: 23px;
+  font-size: 24px;
 }
 
 p {
-  color: var(--font-color);
-  font-size: 18px;
-}
+  color: var(--font-color); 
+  font-size: 20px;
+} 
 
 li {
   color: var(--font-color);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
 li::marker {
   color: var(--yellow);
-  font-size: 22px; 
+  font-size: 20px; 
 }
