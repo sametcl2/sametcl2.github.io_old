@@ -1,0 +1,8 @@
+.Container {
+  padding: 20px;
+  background-color: var(--category-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}

@@ -1,0 +1,30 @@
+.MenuStyle {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--category-background-color);
+  border-radius: 7px;
+  padding: 50px 20px;
+  position: relative;
+  max-width: 100%;
+  width: 300px;
+}
+
+.MenuLink {
+  color: var(--link-color);
+  font-size: 23px;
+  padding: 10px;
+  display: inline;
+}
+
+.MenuLink:hover {
+  background-color: var(--background-color);
+  border-radius: 6px;
+}
+
+.CrossStyle {
+  position: absolute;
+  padding: 10px;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}

@@ -1,8 +1,8 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import About from "../components/aboutHeader";
+import About from "../components/about-header";
 
-const AboutPage = ({ data }) => {
+const AboutPage = () => {
   return (
     <Layout>
       <About />

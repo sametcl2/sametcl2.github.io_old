@@ -1,4 +1,6 @@
 :root {
+  margin: 0px;
+  padding: 0px;
   --primary: #7d87ff;
   --link-color: white;
   --border-color: #111;
@@ -35,10 +37,16 @@
   --yellow: #ffb038;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background-color);
-  line-height: 1.6; 
-  text-align:justify;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 p,
@@ -97,7 +105,7 @@ h5 {
 
 .container {
   margin: auto;
-  max-width: 800px;
+  max-width: 750px;
   font-family: sans-serif;
 }
 
