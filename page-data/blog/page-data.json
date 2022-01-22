@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-index-js",
+    "path": "/blog/",
+    "result": {"data":{"allMdx":{"nodes":[{"frontmatter":{"datePublished":"20 Ocak 2022","author":"Samet Şahin","title":"2022 Hedeflerim"},"id":"f4e79322-26eb-5bde-a290-17f7a037593b","slug":"2022-hedefleri"},{"frontmatter":{"datePublished":"Invalid date","author":"","title":"Aboutme"},"id":"16c8bf5c-f9b3-5549-9def-e990cd757156","slug":"aboutme"}]}},"pageContext":{}},
+    "staticQueryHashes": []}
